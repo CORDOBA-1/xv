@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis 15 Esmeralda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="disco-background">
+        <div class="disco-ball disco-ball-1"></div>
+        <div class="disco-ball disco-ball-2"></div>
+        <div class="disco-ball disco-ball-3"></div>
+        <div class="disco-ball disco-ball-4"></div>
+        <div class="disco-ball disco-ball-5"></div>
+    </div>
+    <div class="container">
+        <!-- Sección Hero con Contador -->
+        <section class="hero">
+            <img src="img/nav.jpeg" alt="Esmeralda" class="hero-image">
+            <div class="hero-content">
+                <h1 class="title">
+                    <span class="title-line">MIS 15</span>
+                    <span class="title-line">ESMERALDA</span>
+                </h1>
+                <div class="countdown" id="countdown">
+                    <div class="time-unit">
+                        <span class="time-value" id="days">00</span>
+                        <span class="time-label">DÍAS</span>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="time-unit">
+                        <span class="time-value" id="hours">00</span>
+                        <span class="time-label">HORAS</span>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="time-unit">
+                        <span class="time-value" id="minutes">00</span>
+                        <span class="time-label">MINUTOS</span>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="time-unit">
+                        <span class="time-value" id="seconds">00</span>
+                        <span class="time-label">SEGUNDOS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Cuándo -->
+        <section class="info-section when-section">
+            <div class="info-content">
+                <i class="fas fa-calendar-alt info-icon fa-bounce"></i>
+                <h2 class="info-question">¿CUÁNDO?</h2>
+                <p class="info-date">12 DE SEPTIEMBRE 2026</p>
+                <p class="info-time">| 21:00 HS |</p>
+            </div>
+        </section>
+
+        <!-- Sección Dónde -->
+        <section class="info-section where-section">
+            <div class="info-content">
+                <i class="fas fa-compact-disc info-icon disco-icon fa-spin"></i>
+                <h2 class="info-question">¿DÓNDE?</h2>
+                <p class="info-location">BIOFAR BAJO LA VIÑA</p>
+                <button class="location-button" id="locationButton">COMO LLEGAR</button>
+            </div>
+        </section>
+
+        <!-- Sección Bokeh con Disco Balls -->
+        <section class="bokeh-section">
+            <img src="img/misquince.jpeg" alt="Mis 15" class="bokeh-image">
+            <div class="bokeh-content">
+                <h2 class="bokeh-title">
+                    <span class="bokeh-title-line">MIS 15</span>
+                    <span class="bokeh-title-line">ESMERALDA</span>
+                </h2>
+            </div>
+        </section>
+
+        <!-- Sección Instagram -->
+        <section class="instagram-section">
+            <div class="instagram-content">
+                <i class="fas fa-camera instagram-icon fa-bounce"></i>
+                <p class="instagram-text">QUIERO VER TUS FOTOS</p>
+                <p class="instagram-text">PUEDEN USAR MI # EN TODAS SUS</p>
+                <p class="instagram-text">PUBLICACIONES DE INSTAGRAM</p>
+                <p class="instagram-hashtag">#ESMERALDAFEST</p>
+            </div>
+        </section>
+
+        <!-- Sección Confirmación de Asistencia -->
+        <section class="confirmation-section">
+            <div class="confirmation-content">
+                <i class="fas fa-envelope-circle-check confirmation-icon"></i>
+                <h2 class="confirmation-title">CONFIRMÁ</h2>
+                <p class="confirmation-date">ANTES DEL 12 DE AGOSTO 2026</p>
+                
+                <form class="confirmation-form">
+                    <div class="form-group">
+                        <label class="form-label">Número de personas a confirmar</label>
+                        <div class="select-wrapper">
+                            <select class="form-select" id="numPeople" name="numPeople">
+                                <option value="1">1 persona</option>
+                                <option value="2">2 personas</option>
+                                <option value="3">3 personas</option>
+                                <option value="4">4 personas</option>
+                                <option value="5">5 personas</option>
+                                <option value="6">6 personas</option>
+                                <option value="7">7 personas</option>
+                                <option value="8">8 personas</option>
+                                <option value="9">9 personas</option>
+                                <option value="10">10 personas</option>
+                                <option value="11">11 personas</option>
+                                <option value="12">12 personas</option>
+                                <option value="13">13 personas</option>
+                                <option value="14">14 personas</option>
+                                <option value="15">15 personas</option>
+                            </select>
+                            <i class="fas fa-chevron-down select-arrow"></i>
+                        </div>
+                    </div>
+
+                    <div class="guest-card">
+                        <h3 class="guest-title">Responsable</h3>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Nombre *" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Apellido *" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">¿Confirmas tu asistencia? <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="attendance1" value="confirm" checked>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">¡Confirmo!</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="attendance1" value="decline">
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">No podré asistir</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">¿Qué canción no puede faltar?</label>
+                            <input type="text" class="form-input" placeholder="Nombre de la canción">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="confirm-button">CONFIRMAR</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Sección Final con Fuegos Artificiales -->
+        <section class="fireworks-section">
+            <div class="fireworks-background">
+                <div class="firework firework-1"></div>
+                <div class="firework firework-2"></div>
+                <div class="firework firework-3"></div>
+                <div class="firework firework-4"></div>
+                <div class="firework firework-5"></div>
+                <div class="firework firework-6"></div>
+                <div class="firework firework-7"></div>
+                <div class="firework firework-8"></div>
+                <div class="firework firework-9"></div>
+                <div class="firework firework-10"></div>
+            </div>
+            <div class="fireworks-content">
+                <h2 class="fireworks-title">TE ESPERO</h2>
+            </div>
+        </section>
+    </div>
+
+    <!-- Botón de música -->
+    <button class="music-button" id="musicButton">
+        <svg class="play-icon" viewBox="0 0 24 24" fill="white">
+            <path d="M8 5v14l11-7z"/>
+        </svg>
+        <svg class="pause-icon" viewBox="0 0 24 24" fill="white" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+        </svg>
+    </button>
+
+    <audio id="backgroundMusic" loop autoplay>
+        <source src="music/The Black Eyed Peas - I Gotta Feeling (Official Music Video) - BlackEyedPeasVEVO.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
