@@ -1,6 +1,7 @@
 // Configura la fecha del evento aquí
 // Formato: Año, Mes (0-11), Día, Hora, Minuto, Segundo
-const eventDate = new Date(2024, 11, 31, 18, 0, 0); // Ejemplo: 31 de diciembre de 2024 a las 18:00
+// 14 de febrero de 2026 a las 21:30
+const eventDate = new Date(2026, 1, 14, 21, 30, 0);
 
 function updateCountdown() {
     const now = new Date().getTime();
