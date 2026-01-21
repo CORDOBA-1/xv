@@ -113,7 +113,7 @@ musicButton.addEventListener('click', () => {
 const locationButton = document.getElementById('locationButton');
 locationButton.addEventListener('click', () => {
     // Aquí puedes agregar la URL de Google Maps o la acción que quieras
-    // Ejemplo: window.open('https://maps.google.com/?q=BIOFAR+BAJO+LA+VIÑA', '_blank');
+    // Ejemplo: window.open('https://maps.app.goo.gl/s2iXTp6441Dwesfb6', '_blank');
     alert('Agrega aquí la URL de Google Maps o la acción que desees');
 });
 
