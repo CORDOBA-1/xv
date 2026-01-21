@@ -109,12 +109,16 @@ musicButton.addEventListener('click', () => {
     }
 });
 
+
 // Botón de ubicación
 const locationButton = document.getElementById('locationButton');
 locationButton.addEventListener('click', () => {
-    window.open('https://maps.app.goo.gl/s2iXTp6441Dwesfb6', '_blank');
-});
+    // Opción 1: abrir en la misma pestaña (más compatible en móviles)
+    window.location.href = 'https://maps.app.goo.gl/s2iXTp6441Dwesfb6';
 
+    // Opción 2: si prefieres nueva pestaña (puede fallar en móviles)
+    // window.open('https://maps.app.goo.gl/s2iXTp6441Dwesfb6', '_blank');
+});
 
 // Formulario de confirmación de asistencia
 const confirmationForm = document.querySelector('.confirmation-form');
