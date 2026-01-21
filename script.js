@@ -112,10 +112,9 @@ musicButton.addEventListener('click', () => {
 // Botón de ubicación
 const locationButton = document.getElementById('locationButton');
 locationButton.addEventListener('click', () => {
-    // Aquí puedes agregar la URL de Google Maps o la acción que quieras
-    // Ejemplo: window.open('https://maps.app.goo.gl/s2iXTp6441Dwesfb6', '_blank');
-    alert('Agrega aquí la URL de Google Maps o la acción que desees');
+    window.open('https://maps.app.goo.gl/s2iXTp6441Dwesfb6', '_blank');
 });
+
 
 // Formulario de confirmación de asistencia
 const confirmationForm = document.querySelector('.confirmation-form');
